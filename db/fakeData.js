@@ -49,7 +49,7 @@ const restaurantNames = [
   "House Of Wing",
   "Vki Japanese Restaurant",
   "5 O'Clock Club"
-];
+]; //50
 
 const names = [
   "Mel Mccartney",
@@ -75,7 +75,7 @@ const names = [
   "Chris Farely",
   "Rafe",
   "Hammertime"
-];
+]; //23
 
 
 
@@ -105,7 +105,7 @@ const dates = [
 'March 24, 2018',
 'September 9, 2018',
 'January 13, 2019',
-];
+]; //25
 
 const pictures = [
   'https://vice-images.vice.com/images/content-images/2015/10/16/if-you-smell-what-the-rock-is-cooking-101-body-image-1444992411.jpg?output-quality=75',
@@ -119,7 +119,7 @@ const pictures = [
   'https://www.thewrap.com/wp-content/uploads/2018/04/Princess-Bride-Andre-the-Giant-1.jpg',
   'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492107336/articles/2016/11/08/the-uncompromising-politics-of-dave-chappelle/161107-Zimmerman-black-bush-tease_fhfoc9',
   'https://media.vanityfair.com/photos/59a589d562a7f43bf00ac4cd/master/pass/disgust-incest-daenerys.jpg'
-];
+]; //11
 
 const reviews = [
   'This, hands down, is the worst restaurant Ive been too in like my entire life. I got there and it was empty. I don\'t mean no customers, I mean no staff. They had gone out for the night so I decided to just help myself. In all honesty, the food was good. And free so I guess I give them a solid 3 stars. Why not.',
@@ -139,4 +139,12 @@ const reviews = [
   'On the steak tartare: The initial flavor was bland, quickly followed by a fetid, ammonia-like tang. It was an aroma that recalled room-temperature hamburger meat from a grocer that lost power. I felt my eyes water up as I chewed. I tried to swallow but even gravity couldn\'t keep it down.',
   'Being the trend follower that I am, I gave in and dished out the $350 for this plated menu. After reading the recent reviews in The Anaconda Standard while passing through Montana about this #1 rated restaurant in the entire city of Cleavland, Ohio, which we all know is a town of culinary expertise, I booked a table immediately. Holy...amazing. The Lebron jerseys along every wall truly set a romantic mood, only to be topped off by the sweet sounds of the local highschool\'s recent talent show winners "Boys 2 Boyz". The food, delicious. Three words: Kraft Singles Heaven. Don\'t even get me started on the dessert, okay, you got me, fried twinkies. Get yourself on the 3 month waiting list, worth every penny.',
   'Best I ever had -Me (Not Drake)'
-];
+]; //17
+
+module.exports = {
+  restaurantNames, 
+  names,
+  dates,
+  pictures,
+  reviews
+}
