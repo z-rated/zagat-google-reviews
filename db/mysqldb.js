@@ -1,8 +1,9 @@
 // const mysql = require('mysql');
 
+
 // var connection = mysql.createConnection({
 //   host: "localhost",
-//   user: "root"
+//   user: "esod"
 // });
 
 // connection.connect
