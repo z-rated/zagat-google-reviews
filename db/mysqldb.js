@@ -1,9 +1,12 @@
-// const mysql = require('mysql');
+const mysql = require('mysql');
 
 
-// var connection = mysql.createConnection({
-//   host: "localhost",
-//   user: "esod"
-// });
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  database: 'GoogleReviews',
+});
 
-// connection.connect
+connection.connect();
+
+module.exports = connection;
