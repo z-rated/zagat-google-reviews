@@ -6,7 +6,7 @@ const pickRandomData = (targetData) => {
   return targetData[randomNum];
 };
 
-const oneToHundred = i => i % 100;
+const randomRestaurantId = i => i % 100;
 
 const starRating = () => {
   const num = Math.random() * 5;
