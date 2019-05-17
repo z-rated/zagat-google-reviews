@@ -1,4 +1,5 @@
 const mysql = require('mysql');
+// const reviews = require('./randomDataFuncs');
 
 
 const connection = mysql.createConnection({

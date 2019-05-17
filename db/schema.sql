@@ -1,25 +1,20 @@
+DROP DATABASE IF EXISTS GoogleReviews;
+
 CREATE DATABASE GoogleReviews;
 
 USE GoogleReviews;
 
-DROP TABLE IF EXISTS restaurants;
+DROP TABLE IF EXISTS reviews
 
-CREATE TABLE restaurants(
-  rest_id INT AUTO_INCREMENT,
-  name VARCHAR(255) NOT NULL,
-  PRIMARY KEY (rest_id),
-);
-
-DROP TABLE IF EXISTS reviews;
-CREATE TABLE reviews(
-  review_id int AUTO_INCREMENT,
+CREATE TABLE reviews (
+  review_id INT AUTO_INCREMENT,
+  reviewer VARCHAR(255) NOT NULL,
   picture VARCHAR(255) NOT NULL,
   date_posted VARCHAR(255) NOT NULL,
-  rating DECIMAL(2,1) NOT NULL,
+  rating DECIMAL NOT NULL,
   text_review VARCHAR(255) NOT NULL,
-  rest_id int,
+  rest_id INT NOT NULL,
   PRIMARY KEY (review_id),
-  FOREIGN KEY (rest_id) REFERENCES resturants(rest_id),
 );
 
 
