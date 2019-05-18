@@ -16,9 +16,4 @@ CREATE TABLE reviews (
   rest_id INT NOT NULL,
   PRIMARY KEY (review_id)
 );
-
-
-/*  Execute this file from the command line by typing:
- *    mysql -u root < server/schema.sql
- *  to create the database and the tables.*/
   

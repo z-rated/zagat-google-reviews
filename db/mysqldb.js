@@ -1,5 +1,4 @@
 const mysql = require('mysql');
-// const reviews = require('./randomDataFuncs');
 
 
 const connection = mysql.createConnection({
@@ -10,4 +9,17 @@ const connection = mysql.createConnection({
 
 connection.connect();
 
-module.exports = connection;
+const get = (id, cb) => {
+  connection.query(`SELECT * FROM reviews WHERE rest_id = ${id}`, (err, data) => {
+    if (err) {
+      cb(err);
+      return;
+    }
+    cb(null, data);
+  });
+};
+
+module.exports = {
+  connection,
+  get,
+};
