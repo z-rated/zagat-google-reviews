@@ -1,4 +1,5 @@
 const fakeData = require('./fakeData.js');
+const connection = require('./mysqldb');
 
 const pickRandomData = (targetData) => {
   const range = targetData.length;
@@ -16,14 +17,14 @@ const starRating = () => {
 };
 
 const createReviewRow = (i) => {
-  const reviewRow = {
-    name: pickRandomData(fakeData.names),
-    picture: pickRandomData(fakeData.pictures),
-    date: pickRandomData(fakeData.dates),
-    rating: starRating(),
-    review: pickRandomData(fakeData.reviews),
-    restid: oneToHundred(i) + 1,
-  };
+  const reviewRow = [
+    pickRandomData(fakeData.names),
+    pickRandomData(fakeData.pictures),
+    pickRandomData(fakeData.dates),
+    starRating(),
+    pickRandomData(fakeData.reviews),
+    randomRestaurantId(i) + 1,
+  ];
   return reviewRow;
 };
 
@@ -38,4 +39,15 @@ const reviewsGenerator = () => {
 
 const reviews = reviewsGenerator();
 
-module.exports = reviews;
+const seedDB = () => {
+  connection.query(`INSERT INTO reviews (reviewer, picture, date_posted, rating, text_review, rest_id)
+  VALUES ?`, [reviews], (err) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log('Success!');
+    }
+  });
+};
+
+seedDB();
