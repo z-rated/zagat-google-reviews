@@ -11,7 +11,8 @@
     "build": "webpack  -d",
     "start": "nodemon ./server/app.js",
     "cdb": "node db/schema.sql",
-    "seed": "node db/randomDataFuncs.js"
+    "seed": "node db/randomDataFuncs.js",
+    "test": "jest"
   },
   "lint-staged": {
     "*.js": "eslint",
