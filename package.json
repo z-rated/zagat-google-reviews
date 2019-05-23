@@ -23,8 +23,29 @@
       "pre-commit": "lint-staged"
     }
   },
+  "jest": {
+    "collectCoverage": true,
+    "verbose": true,
+    "testMatch": [
+      "**/client/src/components/**/*.test.{js,jsx}",
+      "**/__tests__/*.{js}"
+    ],
+    "setupFilesAfterEnv": [
+      "./node_modules/jest-enzyme/lib/index.js"
+    ],
+    "unmockedModulePathPatterns": [
+      "react",
+      "enzyme",
+      "jest-enzyme"
+    ],
+    "testURL": "http://localhost",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
   "dependencies": {
     "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
     "express": "^4.16.4",
     "faker": "^4.1.0",
     "mysql": "^2.17.1",
@@ -37,6 +58,9 @@
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.1",
+    "enzyme-to-json": "^3.3.5",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.17.2",
@@ -47,6 +71,7 @@
     "lint-staged": "^8.1.7",
     "nodemon": "^1.19.0",
     "pre-commit": "^1.2.2",
+    "supertest": "^4.0.2",
     "webpack": "^4.31.0",
     "webpack-cli": "^3.3.2"
   }
