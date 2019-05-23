@@ -2,6 +2,7 @@ const express = require('express');
 const parser = require('body-parser');
 const path = require('path');
 const db = require('../db/mysqldb');
+require('dotenv').config();
 
 const app = express();
 
