@@ -49,7 +49,7 @@ const restaurantNames = [
   'House Of Wing',
   'Vki Japanese Restaurant',
   '5 O\'Clock Club',
-]; //  50
+];
 
 const names = [
   'Mel Mccartney',
@@ -75,7 +75,7 @@ const names = [
   'Chris Farely',
   'Rafe',
   'Hammertime',
-]; //  23
+];
 
 const dates = [
   'March 25, 2000',
@@ -103,7 +103,7 @@ const dates = [
   'March 24, 2018',
   'September 9, 2018',
   'January 13, 2019',
-];//  25
+];
 
 const pictures = [
   'https://vice-images.vice.com/images/content-images/2015/10/16/if-you-smell-what-the-rock-is-cooking-101-body-image-1444992411.jpg?output-quality=75',
@@ -117,27 +117,28 @@ const pictures = [
   'https://www.thewrap.com/wp-content/uploads/2018/04/Princess-Bride-Andre-the-Giant-1.jpg',
   'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492107336/articles/2016/11/08/the-uncompromising-politics-of-dave-chappelle/161107-Zimmerman-black-bush-tease_fhfoc9',
   'https://media.vanityfair.com/photos/59a589d562a7f43bf00ac4cd/master/pass/disgust-incest-daenerys.jpg',
-]; // 11
+];
 
 const reviews = [
-  'This, hands down, is the worst restaurant Ive been too in like my entire life. I got there and it was empty. I don\'t mean no customers, I mean no staff. They had gone out for the night so I decided to just help myself. In all honesty, the food was good.',
-  'The ramen tastes like it is out of instant ramen package. The shave ice they give out for free is not bad. But it seems more like it is a $15 shave ice with ramen instead of $15 ramen with shave ice',
-  'Bad service, bad food, handsome owner, total score 3.5',
-  'the owner mugged me',
-  'The best stir fry ong choy around town with ample amount of garlic. Under $10. The best deal when you have the craving',
-  'The ramen tastes like it is out of instant ramen package. The shave ice they give out for free is not bad. But it seems more like it is a $15 shave ice with ramen instead of $15 ramen with shave ice',
-  'If you are craving a burger with toasted bun,  homemade hamburger patty, and unlimited fries, this is heaven',
-  'The best poke bowl around town hands down. Nested in a dirty Chinatown market but the owner is Japanese so they are super clean. The taste is different than the conventional supermarket poke bowl you get that is heavy on the seasoning.',
-  'Stone Kitchen is at Embarcadaro center is Absolutely Terrible. They serve frozen hamburger and they BURNT IT T.T I can taste the bitterness in all my bites. Start worrying about cancer....',
-  'Their dim sum isn\'t bad BUT you have to have them make it fresh otherwise it is over-steamed.',
-  'The best chai latte ever. They uses a special blend of spices. A world different than Starbucks',
-  'This Thai lady that runs this food truck gives a lot of food. Their Pad Kee Mow is amazing. I eat there everyday.',
-  'I bought a $7.49 have ice and got a $74.9 bill at this shave ice shop. Not sure if they are trying to scam me. The lady didn\'t say sorry.',
-  'On my way to this burger place on the bus one guy was handing out roses to the bus riders. I took one and decided to give it to the waitress, and she told me "I will for sure give you my number" >.< $5 monday burger night yummmmm. Oh she is hot too ~~~~',
-  'On the steak tartare: The initial flavor was bland, quickly followed by a fetid, ammonia-like tang. It was an aroma that recalled room-temperature hamburger meat from a grocer that lost power. I felt my eyes water up as I chewed.',
-  'I gave in and dished out the $350 for this plated menu.The Lebron jerseys along every wall truly set a romantic mood. The food, delicious. Three words: Kraft Singles Heaven.',
-  'Best I ever had -Me (Not Drake)',
-]; // 17
+  'This, hands down, is the worst restaurant Ive been too in like my entire life. I got there and it was empty. I don\'t mean no customers, I mean no staff. They had gone out for the night so I decided to just help myself. In all honesty, the food was good. This, hands down, is the worst restaurant Ive been too in like my entire life. I got there and it was empty. I don\'t mean no customers, I mean no staff. They had gone out for the night so I decided to just help myself. In all honesty, the food was good.',
+  'The ramen tastes like it is out of instant ramen package. The shave ice they give out for free is not bad. But it seems more like it is a $15 shave ice with ramen instead of $15 ramen with shave ice. The ramen tastes like it is out of instant ramen package. The shave ice they give out for free is not bad. But it seems more like it is a $15 shave ice with ramen instead of $15 ramen with shave ice',
+  'Bad service, bad food, handsome owner, total score 3.5 Bad service, bad food, handsome owner, total score 3.5 Bad service, bad food, handsome owner, total score 3.5 Bad service, bad food, handsome owner, total score 3.5 Bad service, bad food, handsome owner, total score 3.5 Bad service, bad food, handsome owner, total score 3.5 Bad service, bad food, handsome owner, total score 3.5 Bad service, bad food, handsome owner, total score 3.5',
+  'the owner mugged me the owner mugged me the owner mugged me the owner mugged me the owner mugged me the owner mugged me the owner mugged me the owner mugged me the owner mugged me the owner mugged me the owner mugged me the owner mugged me the owner mugged me the owner mugged me the owner mugged me the owner mugged me the owner mugged me the owner mugged me the owner mugged me the owner mugged me the owner mugged me the owner mugged me the owner mugged me',
+  'The best stir fry ong choy around town with ample amount of garlic. Under $10. The best deal when you have the craving.  The best stir fry ong choy around town with ample amount of garlic. Under $10. The best deal when you have the craving. The best stir fry ong choy around town with ample amount of garlic. Under $10. The best deal when you have the craving. The best stir fry ong choy around town with ample amount of garlic. Under $10. The best deal when you have the craving',
+  'The ramen tastes like it is out of instant ramen package. The shave ice they give out for free is not bad. But it seems more like it is a $15 shave ice with ramen instead of $15 ramen with shave ice. The ramen tastes like it is out of instant ramen package. The shave ice they give out for free is not bad. But it seems more like it is a $15 shave ice with ramen instead of $15 ramen with shave ice. The ramen tastes like it is out of instant ramen package. The shave ice they give out for free is not bad. But it seems more like it is a $15 shave ice with ramen instead of $15 ramen with shave ice',
+  'If you are craving a burger with toasted bun, homemade hamburger patty, and unlimited fries, this is heaven. If you are craving a burger with toasted bun, homemade hamburger patty, and unlimited fries, this is heaven. If you are craving a burger with toasted bun, homemade hamburger patty, and unlimited fries, this is heaven. If you are craving a burger with toasted bun, homemade hamburger patty, and unlimited fries, this is heaven',
+  'The best poke bowl around town hands down. Nested in a dirty Chinatown market but the owner is Japanese so they are super clean. The taste is different than the conventional supermarket poke bowl you get that is heavy on the seasoning. The best poke bowl around town hands down. Nested in a dirty Chinatown market but the owner is Japanese so they are super clean. The taste is different than the conventional supermarket poke bowl you get that is heavy on the seasoning.',
+  'Stone Kitchen is at Embarcadaro center is Absolutely Terrible. They serve frozen hamburger and they BURNT IT T.T I can taste the bitterness in all my bites. Start worrying about cancer....  Stone Kitchen is at Embarcadaro center is Absolutely Terrible. They serve frozen hamburger and they BURNT IT T.T I can taste the bitterness in all my bites. Start worrying about cancer....',
+  'Their dim sum isn\'t bad BUT you have to have them make it fresh otherwise it is over-steamed.  Their dim sum isn\'t bad BUT you have to have them make it fresh otherwise it is over-steamed. Their dim sum isn\'t bad BUT you have to have them make it fresh otherwise it is over-steamed. Their dim sum isn\'t bad BUT you have to have them make it fresh otherwise it is over-steamed.',
+  'The best chai latte ever. They uses a special blend of spices. A world different than Starbucks. The best chai latte ever. They uses a special blend of spices. A world different than Starbucks. The best chai latte ever. They uses a special blend of spices. A world different than Starbucks. The best chai latte ever. They uses a special blend of spices. A world different than Starbucks',
+  'This Thai lady that runs this food truck gives a lot of food. Their Pad Kee Mow is amazing. I eat there everyday. This Thai lady that runs this food truck gives a lot of food. Their Pad Kee Mow is amazing. I eat there everyday. This Thai lady that runs this food truck gives a lot of food. Their Pad Kee Mow is amazing. I eat there everyday.',
+  'I bought a $7.49 have ice and got a $74.9 bill at this shave ice shop. Not sure if they are trying to scam me. The lady didn\'t say sorry. I bought a $7.49 have ice and got a $74.9 bill at this shave ice shop. Not sure if they are trying to scam me. The lady didn\'t say sorry. I bought a $7.49 have ice and got a $74.9 bill at this shave ice shop. Not sure if they are trying to scam me. The lady didn\'t say sorry.',
+  'On my way to this burger place on the bus one guy was handing out roses to the bus riders. I took one and decided to give it to the waitress, and she told me "I will for sure give you my number" >.< $5 monday burger night yummmmm. Oh she is hot too ~~~~  On my way to this burger place on the bus one guy was handing out roses to the bus riders. I took one and decided to give it to the waitress, and she told me "I will for sure give you my number" >.< $5 monday burger night yummmmm. Oh she is hot too ~~~~',
+  'On the steak tartare: The initial flavor was bland, quickly followed by a fetid, ammonia-like tang. It was an aroma that recalled room-temperature hamburger meat from a grocer that lost power. I felt my eyes water up as I chewed. On the steak tartare: The initial flavor was bland, quickly followed by a fetid, ammonia-like tang. It was an aroma that recalled room-temperature hamburger meat from a grocer that lost power. I felt my eyes water up as I chewed.',
+  'I gave in and dished out the $350 for this plated menu.The Lebron jerseys along every wall truly set a romantic mood. The food, delicious. Three words: Kraft Singles Heaven.  I gave in and dished out the $350 for this plated menu.The Lebron jerseys along every wall truly set a romantic mood. The food, delicious. Three words: Kraft Singles Heaven.',
+  'Best I ever had -Me (Not Drake)   Best I ever had -Me (Not Drake)  Best I ever had -Me (Not Drake)  Best I ever had -Me (Not Drake)  Best I ever had -Me (Not Drake)  Best I ever had -Me (Not Drake)  Best I ever had -Me (Not Drake)  Best I ever had -Me (Not Drake)  Best I ever had -Me (Not Drake)   Best I ever had -Me (Not Drake)  Best I ever had -Me (Not Drake)  Best I ever had -Me (Not Drake)',
+
+];
 
 module.exports = {
   restaurantNames,
