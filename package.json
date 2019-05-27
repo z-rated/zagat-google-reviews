@@ -8,9 +8,8 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "build": "webpack  -d",
+    "build": "webpack  -d --watch",
     "start": "nodemon ./server/app.js",
-    "cdb": "node db/schema.sql",
     "seed": "node db/randomDataFuncs.js",
     "test": "jest"
   },
@@ -48,10 +47,13 @@
     "dotenv": "^8.0.0",
     "express": "^4.16.4",
     "faker": "^4.1.0",
+    "jquery": "^3.4.1",
     "mysql": "^2.17.1",
     "path": "^0.12.7",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
@@ -66,6 +68,7 @@
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
+    "fs": "0.0.1-security",
     "husky": "^2.3.0",
     "jest": "^24.8.0",
     "lint-staged": "^8.1.7",

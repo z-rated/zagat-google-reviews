@@ -1,5 +1,5 @@
 const fakeData = require('./fakeData.js');
-const connection = require('./mysqldb');
+const db = require('./mysqldb');
 
 const pickRandomData = (targetData) => {
   const range = targetData.length;
@@ -40,12 +40,12 @@ const reviewsGenerator = () => {
 const reviews = reviewsGenerator();
 
 const seedDB = () => {
-  connection.query(`INSERT INTO reviews (reviewer, picture, date_posted, rating, text_review, rest_id)
-  VALUES ?`, [reviews], (err) => {
+  db.connection.query(`INSERT INTO reviews (reviewer, picture, date_posted, rating, text_review, rest_id)
+  VALUES ?`, [reviews], (err, results) => {
     if (err) {
-      console.log(err);
+      throw err;
     } else {
-      console.log('Success!');
+      console.log('Sucess!');
     }
   });
 };

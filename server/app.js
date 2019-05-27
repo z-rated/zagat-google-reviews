@@ -2,7 +2,6 @@ const express = require('express');
 const parser = require('body-parser');
 const path = require('path');
 const db = require('../db/mysqldb');
-require('dotenv').config();
 
 const app = express();
 
@@ -10,7 +9,7 @@ app.set('port', 3333);
 
 app.use(parser.json());
 
-app.use(express.static(path.join(__dirname, '/../client')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 app.get('/api/restaurants/:id/googlereviews', (req, res) => {
   db.get(req.params.id, (err, results) => {
