@@ -5,7 +5,7 @@ const db = require('../db/mysqldb');
 
 const app = express();
 
-app.set('port', 3333);
+app.set('port', 3003);
 
 app.use(parser.json());
 
@@ -21,4 +21,4 @@ app.get('/api/restaurants/:id/googlereviews', (req, res) => {
   });
 });
 
-app.listen(3333, () => console.log('Listening on', app.get('port')));
+app.listen(3003, () => console.log('Listening on', app.get('port')));

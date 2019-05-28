@@ -23,7 +23,9 @@ const Photo = styled.img`
 
 const Date = styled.div`
   color: #656666;
-`;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  `;
 
 const SeeMore = styled.span`
   color: grey;

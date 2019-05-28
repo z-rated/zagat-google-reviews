@@ -41,7 +41,7 @@ const reviews = reviewsGenerator();
 
 const seedDB = () => {
   db.connection.query(`INSERT INTO reviews (reviewer, picture, date_posted, rating, text_review, rest_id)
-  VALUES ?`, [reviews], (err, results) => {
+  VALUES ?`, [reviews], (err) => {
     if (err) {
       throw err;
     } else {
