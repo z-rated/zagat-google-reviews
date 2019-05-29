@@ -1,5 +1,6 @@
 const express = require('express');
 const parser = require('body-parser');
+const cors = require('cors');
 const path = require('path');
 const db = require('../db/mysqldb');
 
@@ -8,6 +9,7 @@ const app = express();
 app.set('port', 3003);
 
 app.use(parser.json());
+app.use(cors());
 
 app.use(express.static(path.join(__dirname, '../public')));
 
