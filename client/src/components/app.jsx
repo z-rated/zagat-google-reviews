@@ -36,7 +36,7 @@ class App extends React.Component {
     const id = window.location.pathname.substring(13);
     $.ajax({
       type: 'GET',
-      url: `http://localhost:3333/restaurants/${id}/googlereviews`,
+      url: `/restaurants/${id}/googlereviews`,
       success: (data) => {
         this.setState({
           current: data,
