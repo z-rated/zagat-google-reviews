@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 const ReviewContainer = styled.div`
   border-bottom: 1px solid lightgrey;
@@ -11,20 +11,24 @@ const ReviewContainer = styled.div`
 `;
 
 const TextInfo = styled.div`
+  color: #101820;
+  font:  15px/20px 'Calibre-Regular';
+  letter-spacing: .013em;
   width: 80%;
 `;
 
 const Photo = styled.img`
   width: 72px;
-  height: 72px
+  height: 72px;
   border-radius: 50%;
-  display: block;
+  object-fit: cover;
 `;
 
 const Date = styled.div`
   color: #656666;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  line-height: 32px;
+  font:  15px/20px 'Calibre-Regular';
+  letter-spacing: .013em;
   `;
 
 const SeeMore = styled.span`
@@ -33,7 +37,7 @@ const SeeMore = styled.span`
 
 const Reviewer = styled.div`
   color: #101820;
-  font: 15px Calibre-Regular
+  font: 15px Calibre-Regular;
 `;
 
 const Rating = styled.span`
@@ -46,7 +50,9 @@ const Star = styled.svg`
 `;
 
 const TextReview = styled.span`
-  font: 15px Calibre-Regular
+  color: #101820;
+  font: 15px/20px 'Calibre-Regular';
+  letter-spacing: .013em;
 `;
 
 class Review extends React.Component {

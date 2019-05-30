@@ -8,7 +8,7 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "build": "webpack  -d --watch",
+    "build": "webpack  -d",
     "start": "nodemon ./server/app.js",
     "seed": "node db/randomDataFuncs.js",
     "test": "jest"
@@ -61,6 +61,7 @@
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
+    "babel-plugin-styled-components": "^1.10.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.13.1",
     "enzyme-to-json": "^3.3.5",

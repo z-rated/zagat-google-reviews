@@ -1,18 +1,12 @@
 import React from 'react';
 import $ from 'jquery';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import Reviews from './reviews';
 
 const Mod = styled.div`
-  padding: 32px;
-  margin: 32px;
-  margin-right: 150px;
-  min-width: 22vw;
-  max-width: 330px;
-  max-height: 80vh;
+  padding: 0px 40px 40px;
   font: 15px;
   background-color: white;
-  float: right;
   overflow: scroll;
   @font-face {
     font-family: "Calibre-Regular";
@@ -36,7 +30,7 @@ class App extends React.Component {
     const id = window.location.pathname.substring(13);
     $.ajax({
       type: 'GET',
-      url: `/restaurants/${id}/googlereviews`,
+      url: `http://localhost:3333/restaurants/${id}/googlereviews`,
       success: (data) => {
         this.setState({
           current: data,

@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/forbid-prop-types */
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import Review from './review';
 
 const GoogleReviews = styled.div`
   padding: 24px 0px 34px;
-  font: 16px Calibre-Semibold;
+  font: 16px/24px Calibre-Semibold;
   color: #656666;
   border-bottom: 1px solid lightgrey;
 `;
