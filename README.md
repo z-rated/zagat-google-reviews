@@ -36,4 +36,21 @@ From within the root directory:
 npm install -g webpack
 npm install
 ```
+## CRUD API
 
+### Get a list of reviews by restaurant id
+```
+GET /restaurants/:uid/googleReviews
+```
+### Post a new review to a restaurant by its id
+```
+POST /restaurants/:uid/googleReviews
+```
+### Delete a specific review by its id.
+```
+DELETE /reviews/:uid/gooleReviews
+```
+### Update a specific review by its id.
+```
+PATCH /reviews/:uid/gooleReviews
+```

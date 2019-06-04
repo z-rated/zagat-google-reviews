@@ -23,4 +23,16 @@ app.get('/api/restaurants/:id/googlereviews', (req, res) => {
   });
 });
 
+app.post('/api/restaurants/:id/googlereviews', (req, res) => {
+
+})
+
+app.put('/api/restaurants/:id/googlereviews', (req, res) => {
+
+})
+
+app.delete('/api/restaurants/:id/googlereviews', (req, res) => {
+
+})
+
 app.listen(3003, () => console.log('Listening on', app.get('port')));
