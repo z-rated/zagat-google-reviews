@@ -4,6 +4,7 @@ const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   database: 'GoogleReviews',
+  password: 'pass'
 });
 
 connection.connect();
