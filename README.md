@@ -40,17 +40,48 @@ npm install
 
 ### Get a list of reviews by restaurant id
 ```
-GET /restaurants/:uid/googleReviews
+GET /restaurants/:id/googleReviews
 ```
+This route expects an integer id from req.params.id.
+
+Successful requests will return an array of five objects with the following structure:
+{
+  "review_id": INTEGER,
+  "reviewer": STRING,
+  "date_posted": STRING,
+  "rating": DECIMAL,
+  "picture": URL,
+  "text_review": STRING,
+  "restaurant_id": INTEGER
+}
+
 ### Post a new review to a restaurant by its id
 ```
-POST /restaurants/:uid/googleReviews
+POST /restaurants/:id/googleReviews
 ```
+This route expects an object with following structure: 
+{
+  "date_posted": STRING,
+  "rating": DECIMAL,
+  "text_review": STRING,
+  "restaurant_id": INTEGER
+  "user_id": STRING,
+}
 ### Delete a specific review by its id.
 ```
-DELETE /reviews/:uid/gooleReviews
+DELETE /reviews/:id/gooleReviews
 ```
+This route expects an integer id from req.params.id.
 ### Update a specific review by its id.
 ```
-PATCH /reviews/:uid/gooleReviews
+PATCH /reviews/:id/gooleReviews
 ```
+This route expects an integer id from req.params.id
+And an object with any key-value pairs inside following structure:
+{
+  "rating": DECIMAL,
+  "text_review": STRING,
+}
+and always has a key-value pair: {
+  "date_posted": STRING,
+}

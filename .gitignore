@@ -26,3 +26,6 @@ dist/
 
 data.csv
 data.csv.gz
+restaurants.csv
+reviews.csv
+users.csv
