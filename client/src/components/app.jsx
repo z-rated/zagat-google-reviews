@@ -23,22 +23,33 @@ class App extends React.Component {
     super(props);
     this.state = {
       current: [],
+      id: 1
     };
   }
 
   componentDidMount() {
-    const id = window.location.pathname.substring(13);
+    const id = new URLSearchParams(window.location.search).get('id');
+    //const id = 1;
+    console.log(id);
+    this.setState({
+      id
+    }, this.getReviews);
+  }
+  
+  getReviews() {
+    const { id } = this.state;
     $.ajax({
       type: 'GET',
-      url: `http://localhost:3333/restaurants/${id}/googlereviews`,
+      url: `/api/restaurants/${id}/googlereviews`,
       success: (data) => {
         this.setState({
           current: data,
+        }, () => {
+          console.log(data);
         });
       },
-    });
+    });   
   }
-
   render() {
     const { current } = this.state;
     return (
