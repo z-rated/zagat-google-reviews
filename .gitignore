@@ -30,3 +30,9 @@ restaurants.csv
 reviews.csv
 users.csv
 restaurants.json
+env
+distribution.js
+random.js
+stressTest.js
+db/
+.clinic/
