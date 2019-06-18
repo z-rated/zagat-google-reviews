@@ -1,25 +1,26 @@
+
+DROP TABLE IF EXISTS reviews;
 DROP TABLE IF EXISTS restaurants;
+DROP TABLE IF EXISTS users;
 
 CREATE TABLE restaurants (
-  id INT,
+  id SERIAL,
   restaurant_name VARCHAR(255) NOT NULL,
   PRIMARY KEY (id)
 );
 
-DROP TABLE IF EXISTS users;
 
 CREATE TABLE users (
-  id INT,
+  id SERIAL,
   username VARCHAR(255) NOT NULL,
   profile_pic VARCHAR(255) NOT NULL,
   PRIMARY KEY (id)
 );
 
 
-DROP TABLE IF EXISTS reviews;
 
 CREATE TABLE reviews (
-  review_id INT,
+  review_id SERIAL,
   date_posted VARCHAR(255) NOT NULL,
   rating DECIMAL NOT NULL,
   text_review TEXT NOT NULL,
